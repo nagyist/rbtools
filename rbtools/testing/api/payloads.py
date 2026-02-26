@@ -369,7 +369,7 @@ class ResourcePayloadFactory(object):
                         'email': 'admin@example.com',
                         'name': 'Admin User',
                     }],
-                    'time_zone': 'US/Pacific',
+                    'time_zone': 'America/Los_Angeles',
                     'url': server_url,
                 },
                 'stat': 'ok',
