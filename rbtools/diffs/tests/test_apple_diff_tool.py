@@ -171,10 +171,10 @@ class AppleDiffToolTests(kgb.SpyAgency, TestCase):
         diff_tool.available = True
         diff_tool.exe_path = '/path/to/diff'
 
-        # US/Arizona does not have DST. So it'll no doubt find another
+        # America/Phoenix does not have DST. So it'll no doubt find another
         # way to eventually bite us.
         old_tz = os.environ.get('TZ', '')
-        os.environ['TZ'] = 'US/Arizona'
+        os.environ['TZ'] = 'America/Phoenix'
 
         try:
             time.tzset()
